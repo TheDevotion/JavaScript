@@ -39,3 +39,14 @@ function convertLength(length) {
 }
 
 convertLength(12);
+
+let todos = ["Get groceries", "Wash car", "Make dinner"];
+console.log(todos);
+
+todos.push("another todo");
+console.log(todos);
+
+todos.pop();
+console.log(todos);
+
+console.log("hello".toUpperCase());
