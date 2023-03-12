@@ -1,52 +1,51 @@
-let todo1 = "Get groceries";
-let todo2 = "Wash car";
-let todo3 = "Make dinner";
-let click_me = "Click Me";
+let todos = ["Get groceries", "Wash car", "Make dinner", "Do laundry"];
 
-function addTodo(todoTitle) {
+todos.forEach(function (todoTitle) {
     let element = document.createElement("div");
     element.innerText = todoTitle;
     document.body.appendChild(element);
+});
+
+// Exercise 7
+
+//1
+
+// function toUpper(stringArray) {
+//     let newArray = [];
+
+//     stringArray.forEach(function (string) {
+//         newArray.push(string.toUpperCase());
+//     });
+
+//     console.log(newArray);
+// }
+
+// toUpper(["hello", "my", "name", "is ", "dipak"]);
+
+//2
+
+// function arrayDouble(arrOfStrings) {
+//     let doubledArray = [];
+
+//     arrOfStrings.forEach(function (string) {
+//         doubledArray.push(string);
+//         doubledArray.push(string);
+//     });
+//     console.log(doubledArray);
+// }
+
+// arrayDouble(["bark", "meow"]);
+
+// 3
+
+function arraySum(arrayNum) {
+    let sum = 0;
+
+    arrayNum.forEach(function (num) {
+        sum = sum + num;
+    });
+
+    console.log(sum);
 }
 
-addTodo(todo1);
-addTodo(todo2);
-addTodo(todo3);
-
-element = document.createElement("button");
-element.innerText = click_me;
-document.body.append(element);
-
-// exercise 6
-
-function greeting(firstName) {
-    console.log("Hello " + firstName);
-}
-
-greeting("Dipak");
-
-function toUpper(str) {
-    let result = str.toUpperCase();
-
-    console.log(result);
-}
-
-toUpper("dipak");
-
-function convertLength(length) {
-    let length_in_cm = length * 2.5;
-    console.log(length_in_cm);
-}
-
-convertLength(12);
-
-let todos = ["Get groceries", "Wash car", "Make dinner"];
-console.log(todos);
-
-todos.push("another todo");
-console.log(todos);
-
-todos.pop();
-console.log(todos);
-
-console.log("hello".toUpperCase());
+arraySum([1, 2, 3]);
