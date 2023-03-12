@@ -1,51 +1,49 @@
-let todos = ["Get groceries", "Wash car", "Make dinner", "Do laundry"];
+// let todos = ["Get groceries", "Wash car", "Make dinner"];
 
-todos.forEach(function (todoTitle) {
-    let element = document.createElement("div");
-    element.innerText = todoTitle;
-    document.body.appendChild(element);
-});
+// todos.forEach(function (todoTitle) {
+//     let element = document.createElement("div");
+//     element.innerText = todoTitle;
+//     document.body.appendChild(element);
+// });
 
-// Exercise 7
-
-//1
-
-// function toUpper(stringArray) {
-//     let newArray = [];
-
-//     stringArray.forEach(function (string) {
-//         newArray.push(string.toUpperCase());
-//     });
-
-//     console.log(newArray);
+// function addTodo() {
+//     let textbox = document.getElementById("todo-title");
+//     let title = textbox.value;
+//     todos.push(title);
 // }
 
-// toUpper(["hello", "my", "name", "is ", "dipak"]);
+//exercise 8
 
-//2
-
-// function arrayDouble(arrOfStrings) {
-//     let doubledArray = [];
-
-//     arrOfStrings.forEach(function (string) {
-//         doubledArray.push(string);
-//         doubledArray.push(string);
-//     });
-//     console.log(doubledArray);
+// function changeToDone(newText) {
+//     let button = document.getElementById("todo-button");
+//     button.innerText = "Done";
 // }
 
-// arrayDouble(["bark", "meow"]);
+// 2
 
-// 3
+// let count = 0;
 
-function arraySum(arrayNum) {
-    let sum = 0;
+// function increaseCounter() {
+//     count = count + 1;
+//     updateCount();
+// }
 
-    arrayNum.forEach(function (num) {
-        sum = sum + num;
-    });
+// function decreaseCounter() {
+//     count = count - 1;
+//     updateCount();
+// }
 
-    console.log(sum);
+// function updateCount() {
+//     let counter = document.getElementById("counter");
+//     counter.innerText = count;
+// }
+
+function Display() {
+    let textbox = document.getElementById("userInput");
+
+    let title = textbox.value;
+
+    let div = document.createElement("div");
+    div.innerText = title;
+    document.body.appendChild(div);
 }
-
-arraySum([1, 2, 3]);
